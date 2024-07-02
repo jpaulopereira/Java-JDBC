@@ -36,6 +36,7 @@ public class ContaDAO {
 
             preparedStatement.execute();
             preparedStatement.close();
+
             conn.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
